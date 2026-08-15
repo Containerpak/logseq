@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Logseq
+Comment=Connect notes and knowledge in an outliner.
+Exec=logseq %U
+Icon=logseq
+Terminal=false
+Categories=Office;
+
