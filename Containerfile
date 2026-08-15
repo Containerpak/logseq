@@ -12,6 +12,10 @@ FROM ghcr.io/containerpak/gtk3:main
 
 LABEL org.opencontainers.image.source="https://github.com/Containerpak/logseq"
 
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends libnspr4 libnss3 && \
+    cpak-clean-junk
+
 COPY --from=source /stage/ /opt/logseq/
 COPY logseq /usr/bin/logseq
 COPY logseq.desktop /usr/share/applications/logseq.desktop
