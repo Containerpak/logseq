@@ -1,10 +1,10 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v2.json",
-  "manifest_version": "2.0",
+  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v3.json",
+  "manifest_version": "3.0",
   "name": "Logseq",
   "description": "Connect notes and knowledge in an outliner.",
   "version": "2.0.1",
-  "image": "ghcr.io/containerpak/logseq:main",
+  "image": "ghcr.io/containerpak/logseq@sha256:96063a433951ac7e1b893cf9168935dfa68d8b82b99d13cd38cceca010984de8",
   "binaries": [
     "/usr/bin/logseq"
   ],
@@ -15,16 +15,11 @@
   "addons": [],
   "idle_time": 0,
   "override": {
-    "socketX11": true,
     "socketWayland": true,
     "socketPulseAudio": true,
-    "socketSessionBus": true,
-    "socketSystemBus": false,
     "socketSshAgent": false,
     "socketCups": false,
     "socketGpgAgent": false,
-    "socketAtSpiBus": true,
-    "socketBluetooth": false,
     "deviceDri": true,
     "deviceKvm": false,
     "deviceShm": true,
@@ -57,8 +52,6 @@
     "memoryMaxMB": 0,
     "cpuQuota": 0,
     "pidsMax": 0,
-    "asRoot": false,
-    "allowedHostCommands": []
+    "asRoot": false
   }
 }
-
