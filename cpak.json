@@ -4,7 +4,7 @@
   "name": "Logseq",
   "description": "Connect notes and knowledge in an outliner.",
   "version": "2.0.1",
-  "image": "ghcr.io/containerpak/logseq@sha256:7672a1a72988ae6bf9ad7be977610f2c5218c20454e3e3ca0d274f31d4f17270",
+  "image": "ghcr.io/containerpak/logseq@sha256:ec367ed1a9af03a5ee43a78a15eb8724e2c6ad3f902c65b682d084f53fac3b1e",
   "binaries": [
     "/usr/bin/logseq"
   ],
